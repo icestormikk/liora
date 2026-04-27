@@ -33,7 +33,7 @@ const contacts: ContactCardProps[] = [
 
 export default function Contacts() {
 	return (
-		<Section className="contacts">
+		<Section id="contacts" className="contacts">
 			<div className="header">
 				<div>
 					<span>Контакты</span>

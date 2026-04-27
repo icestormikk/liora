@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function About() {
 	return (
-		<Section className="about">
+		<Section id="about" className="about">
 			<div className="body">
 				<div className="about-text">
 					<div className="header">
@@ -17,7 +17,7 @@ export default function About() {
 					</div>
 					<p>Liora — это украшения ручной работы из японского бисера Miyuki. Каждое изделие создаётся с вниманием к цвету, форме и тактильному ощущению.</p>
 					<p>Мы верим, что украшение — это не аксессуар, а ощущение. Тепло металла, мягкость жемчуга, игра бисера в свете — всё это складывается в нечто личное и живое.</p>
-					<Link href="#" className="link-arrow">Написать нам</Link>
+					<Link href="#contacts" className="link-arrow">Написать нам</Link>
 				</div>
 				<div className="about-images">
 					<div className="image-wrapper w-3/4 h-[85%] top-0 left-0">

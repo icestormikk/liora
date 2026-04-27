@@ -1,14 +1,32 @@
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
-import Hero from "./components/hero/Hero";
-import About from "./components/sections/about/About";
-import Catalog from "./components/sections/catalog/Catalog";
-import Categories from "./components/sections/categories/Categories";
-import Contacts from "./components/sections/contacts/Contacts";
-import Lookbook from "./components/sections/lookbook/Lookbook";
-import OurValues from "./components/sections/our-values/OurValues";
-import Reviews from "./components/sections/reviews/Reviews";
-import Shipping from "./components/sections/shipping/Shipping";
+import Hero from "./components/sections/hero/Hero";
+import dynamic from "next/dynamic";
+
+const Categories = dynamic(() => import("./components/sections/categories/Categories"), {
+	loading: () => <div>Загрузка...</div>
+})
+const Catalog = dynamic(() => import("./components/sections/catalog/Catalog"), {
+	loading: () => <div>Загрузка...</div>
+})
+const Contacts = dynamic(() => import("./components/sections/contacts/Contacts"), {
+	loading: () => <div>Загрузка...</div>
+})
+const Lookbook = dynamic(() => import("./components/sections/lookbook/Lookbook"), {
+	loading: () => <div>Загрузка...</div>
+})
+const About = dynamic(() => import("./components/sections/about/About"), {
+	loading: () => <div>Загрузка...</div>
+})
+const OurValues = dynamic(() => import("./components/sections/our-values/OurValues"), {
+	loading: () => <div>Загрузка...</div>
+})
+const Reviews = dynamic(() => import("./components/sections/reviews/Reviews"), {
+	loading: () => <div>Загрузка...</div>
+})
+const Shipping = dynamic(() => import("./components/sections/shipping/Shipping"), {
+	loading: () => <div>Загрузка...</div>
+})
 
 export default function Home() {
   	return (

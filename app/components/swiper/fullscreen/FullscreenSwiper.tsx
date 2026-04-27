@@ -1,9 +1,6 @@
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import { MdClose } from "react-icons/md";
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination'; 
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Image as ImageType } from "../../image-slider/ImageSlider";

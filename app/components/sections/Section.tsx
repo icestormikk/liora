@@ -2,12 +2,13 @@ import './section.css';
 import { PropsWithChildren } from "react";
 
 export interface SectionProps {
+	id?: string;
 	className?: string;
 }
 
-export default function Section({ children, className }: PropsWithChildren<SectionProps>) {
+export default function Section({ children, id, className }: PropsWithChildren<SectionProps>) {
 	return (
-		<section className={["section", className].join(" ")}>
+		<section id={id} className={["section", className].join(" ")}>
 			<div>
 				{children}
 			</div>

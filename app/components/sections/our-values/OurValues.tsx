@@ -24,7 +24,7 @@ const Cards: OurValuesCardProps[] = [
 
 export default function OurValues() {
 	return (
-		<Section className="our-values">
+		<Section id="values" className="our-values">
 			<div className="header">
 				<div>
 					<span>Ценности</span>

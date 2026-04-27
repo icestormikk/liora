@@ -43,7 +43,7 @@ export default function Catalog() {
 	}, [onProductClick]);
 
 	return (
-		<Section>
+		<Section id="catalog">
 			<div className="header">
 				<div>
 					<span>Каталог</span>
@@ -54,7 +54,7 @@ export default function Catalog() {
 			<ProductsTabber tabs={productTabs}/>
 			{ selectedProduct && (
 				<LioraModal className="product-catalog-card-modal" isOpen={isOpen} onClose={() => close()}>
-					<div className="grid grid-cols-2 h-full">
+					<div className="grid sm:grid-cols-2 grid-cols-1 h-full">
 						<InlineSwiper images={[{ src: selectedProduct.imagePath, alt: `${selectedProduct.label}_image`}]}/>
 						<div className="flex flex-col gap-4 justify-center items-start p-[clamp(24px,4vw,48px)]">
 							<div className="product-main-info">

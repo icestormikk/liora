@@ -5,7 +5,7 @@ import { getAllReviews } from '@/app/data/reviews';
 
 export default function Reviews() {
 	return (
-		<Section className="reviews">
+		<Section id="reviews" className="reviews">
 			<div className="header">
 				<div>
 					<span>Отзывы</span>

@@ -73,3 +73,9 @@
         @apply grid-cols-1 gap-6
     }
 }
+
+@media (max-width: 640px) {
+	.product-catalog-card-modal .modal-body .swiper-slide {
+		@apply h-[min(56vw,340px)]!	
+	}
+}

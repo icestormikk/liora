@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 .modal-overlay {
-	@apply fixed inset-0 bg-[rgba(8,8,12,0.72)] backdrop-blur-[6px] flex justify-center items-center p-4 z-9999;
+	@apply fixed inset-0 bg-[rgba(8,8,12,0.72)] backdrop-blur-[6px] flex justify-center items-center p-5 z-9999;
 	animation: overlayIn 220ms ease forwards;
 }
 
 .modal-dialog {
-	@apply relative bg-(--background) border border-solid border-[rgba(255,255,255,0.08)] rounded-xs flex flex-col max-h-[calc(100vh-32px)] w-full max-w-[860px] outline-none;
+	@apply relative bg-(--background) border border-solid border-[rgba(255,255,255,0.08)] rounded-xs flex flex-col not-sm:h-[min(88vh,680px)] h-auto w-full max-w-215 outline-none;
 	animation: dialogIn 320ms cubic-bezier(0.34,1.4,0.64,1) forwards;
 }
 

@@ -21,12 +21,12 @@ export default function Header() {
 		<header id="header">
 			<Logo/>
 			<div id="nav-buttons">
-				<Link href="/#catalog">Каталог</Link>
-				<Link href="/#about">О нас</Link>
-				<Link href="/#values">Ценности</Link>
-				<Link href="/#shipping">Доставка</Link>
-				<Link href="/#reviews">Отзывы</Link>
-				<Link href="/#contacts">Контакты</Link>
+				<Link href="#catalog">Каталог</Link>
+				<Link href="#about">О нас</Link>
+				<Link href="#values">Ценности</Link>
+				<Link href="#shipping">Доставка</Link>
+				<Link href="#reviews">Отзывы</Link>
+				<Link href="#contacts">Контакты</Link>
 			</div>
 			
 			<button className="cart-button" onClick={() => setCartOpen(!cartOpen)} aria-label="Open cart" >
@@ -41,12 +41,12 @@ export default function Header() {
 			</button>
 			{menuOpen && (
 				<nav id="mobile-nav" onClick={handleLinkClick} className={menuOpen ? 'open' : ''}>
-					<Link href="/#catalog" >Каталог</Link>
-					<Link href="/#about">О нас</Link>
-					<Link href="/#values">Ценности</Link>
-					<Link href="/#shipping">Доставка</Link>
-					<Link href="/#reviews">Отзывы</Link>
-					<Link href="/#contacts">Контакты</Link>
+					<Link href="#catalog" >Каталог</Link>
+					<Link href="#about">О нас</Link>
+					<Link href="#values">Ценности</Link>
+					<Link href="#shipping">Доставка</Link>
+					<Link href="#reviews">Отзывы</Link>
+					<Link href="#contacts">Контакты</Link>
 				</nav>
 			)}
 		</header>

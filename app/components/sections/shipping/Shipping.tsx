@@ -25,7 +25,7 @@ const ShippingCards: ShippingCardProps[] = [
 
 export default function Shipping() {
 	return (
-		<Section className="shipping">
+		<Section id="shipping" className="shipping">
 			<div className="header">
 				<div>
 					<span>Доставка</span>

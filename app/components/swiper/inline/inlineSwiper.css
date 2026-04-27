@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.inline-swiper {
+	@apply w-full h-[min(56vw,340px)] sm:h-full bg-(--background-warm)
+}
+
+.inline-swiper .inline-swiper-slide > div {
+	@apply relative h-full
+}
+
+.inline-swiper .inline-swiper-slide > div > img {
+	@apply object-contain sm:object-cover 
+}

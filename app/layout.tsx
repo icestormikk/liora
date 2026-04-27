@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Cormorant_Garamond, Great_Vibes } from "next/font/google";
 import "./globals.css";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination'; 
 import { CartProvider } from "./context/CartContext";
 import CartSidebar from "./components/cart/CartSidebar";
 
