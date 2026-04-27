@@ -14,13 +14,13 @@ export default function Lookbook() {
 				</div>
 				<div className="body">
 					<div className="image-wrapper">
-						<Image src="/circle/ukrasheniya-sergi-iz-bisera-2.jpg" alt="" fill sizes="100%" style={{ objectFit: "cover" }}/>
+						<Image src="/liora/circle/ukrasheniya-sergi-iz-bisera-2.jpg" alt="" fill sizes="100%" style={{ objectFit: "cover" }}/>
 					</div>
 					<div className="image-wrapper">
-						<Image src="/lepestki/ukrasheniya-sergi-lepestki-iz-bisera-2.jpg" alt="" fill sizes="100%" style={{ objectFit: "cover" }}/>
+						<Image src="/liora/lepestki/ukrasheniya-sergi-lepestki-iz-bisera-2.jpg" alt="" fill sizes="100%" style={{ objectFit: "cover" }}/>
 					</div>
 					<div className="image-wrapper">
-						<Image src="/pearl/ukrasheniya-braslet-iz-bisera-i-zhemchuga-2.jpg" alt="" fill sizes="100%" style={{ objectFit: "cover" }}/>
+						<Image src="/liora/pearl/ukrasheniya-braslet-iz-bisera-i-zhemchuga-2.jpg" alt="" fill sizes="100%" style={{ objectFit: "cover" }}/>
 					</div>
 				</div>
 				<div className="quote">

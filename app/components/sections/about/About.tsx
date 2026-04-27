@@ -21,10 +21,10 @@ export default function About() {
 				</div>
 				<div className="about-images">
 					<div className="image-wrapper w-3/4 h-[85%] top-0 left-0">
-						<Image src="/circle/ukrasheniya-sergi-iz-bisera.jpg" alt="" fill sizes="100%" style={{ objectFit: "cover" }} />
+						<Image src="/liora/circle/ukrasheniya-sergi-iz-bisera.jpg" alt="" fill sizes="100%" style={{ objectFit: "cover" }} />
 					</div>
 					<div className="image-wrapper w-[48%] h-[55%] bottom-0 right-0">
-						<Image src="/treugolnik/ukrasheniya-sergi-iz-bisera.jpg" alt="" fill sizes="100%" style={{ objectFit: "cover" }} />
+						<Image src="/liora/treugolnik/ukrasheniya-sergi-iz-bisera.jpg" alt="" fill sizes="100%" style={{ objectFit: "cover" }} />
 					</div>
 				</div>
 			</div>
