@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+.modal-overlay {
+	@apply fixed inset-0 bg-[rgba(8,8,12,0.72)] backdrop-blur-[6px] flex justify-center items-center p-4 z-9999;
+	animation: overlayIn 220ms ease forwards;
+}
+
+.modal-dialog {
+	@apply relative bg-(--background) border border-solid border-[rgba(255,255,255,0.08)] rounded-xs flex flex-col max-h-[calc(100vh-32px)] w-full max-w-[860px] outline-none;
+	animation: dialogIn 320ms cubic-bezier(0.34,1.4,0.64,1) forwards;
+}
+
+.modal-header {
+	@apply grid grid-cols-[1fr_auto] justify-between items-start gap-3 p-[24px_28px_20px] shrink-0
+}
+
+.modal-header-text {
+	@apply flex flex-col gap-1;
+}
+
+.modal-title {
+	@apply m-0
+}
+
+.modal-footer {
+	@apply p-[0_24px_24px] shrink-0 flex items-center justify-end gap-2.5
+}
+
+.modal-footer:empty {
+	@apply hidden
+}
+
+.modal-close {
+	@apply border border-solid border-(--color-border) p-0 w-9 h-9 flex justify-center items-center text-(--text-muted)
+}
+
+.modal-body {
+	@apply px-7 py-6 overflow-y-auto flex-1
+}
+
+@keyframes overlayIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@keyframes dialogIn {
+	from { opacity: 0; transform: translateY(24px) scale(0.96); }
+	to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes sheetIn {
+	from { transform: translateY(100%); }
+	to { transform: translateY(0);    }
+}
+
+@media (max-width: 480px) {
+	.modal-overlay {
+		@apply items-end p-0;
+	}	
+
+	.modal-dialog {
+		@apply rounded-bl-none rounded-br-none max-h-[90vh];
+		animation: sheetIn 300ms cubic-bezier(0.34,1.4,0.64,1) forwards;
+	}
+}

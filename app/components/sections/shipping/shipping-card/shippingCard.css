@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.shipping-card {
+	@apply flex flex-col text-left items-start gap-4
+}
+
+.shipping-card .shipping-card-icon {
+	@apply border border-(--color-border) w-12 h-12 text-(--color-accent) flex justify-center items-center
+}
+
+.shipping-card h3 {
+	@apply font-(family-name:--font-cormorant-garamond) text-[20px]
+}
+
+.shipping-card p {
+	@apply font-(family-name:--font-inter) text-[14px] text-(--text-muted)
+}

@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+.categories-container {
+	@apply grid grid-cols-2 gap-4
+}
+
+.categories-container > div:hover img {
+	@apply scale-[1.04] 
+}
+
+.category-overlay {
+	@apply cursor-pointer absolute top-0 left-0 bg-linear-to-t from-[rgba(30,26,22,0.6)] from-0% to-transparent to-60% w-full h-full p-8 text-white flex justify-end items-start flex-col
+}
+
+.category-overlay > span {
+	@apply mb-2 font-(family-name:--font-inter) text-[12px] tracking-[0.2em] text-white/60
+}
+
+.category-overlay > h1 {
+	@apply mb-4 font-(family-name:--font-cormorant-garamond) text-[28px]
+}
+
+.category-overlay > button {
+	@apply w-full border-b-white/30 border-b p-0 tracking-[0.15em] text-[11px] text-start text-white/75 py-2
+}
+
+.category-overlay:hover > button {
+	@apply border-b-white/70 text-white
+}

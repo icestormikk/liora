@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+.our-values {
+	@apply bg-(--background-blush)
+}
+
+.our-values .header {
+	@apply flex flex-col justify-center items-center text-center
+}
+
+.our-values .body {
+	@apply grid grid-cols-3 gap-10
+}
+
+@media (max-width: 768px) {
+    .our-values .body {
+		@apply gap-8 grid-cols-1
+    }
+}

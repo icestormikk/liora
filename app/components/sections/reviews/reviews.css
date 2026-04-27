@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.reviews {
+	@apply bg-(--background-blush)
+}
+
+.reviews .header {
+	@apply text-center flex justify-center items-center
+}

@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.product-catalog-card {
+	@apply flex flex-col gap-4 font-(family-name:--font-cormorant-garamond) text-(--color-text) cursor-pointer
+}
+
+.product-catalog-card .product-catalog-card-label {
+	@apply font-normal text-[18px] leading-[1.3] mb-4
+}
+
+.product-catalog-card .product-catalog-card-price {
+	@apply text-[17px] leading-[0.02em] mb-3
+}
+
+.product-catalog-card .product-catalog-card-order-btn {
+	@apply border border-(--color-text) py-2.5! px-4! text-[11px]! hover:bg-(--color-accent) hover:border-(--color-accent) hover:text-white transition-all duration-220
+}

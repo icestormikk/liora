@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+.product-cards {
+	@apply grid grid-cols-3 gap-8
+}
+
+.product-catalog-card-modal {
+	@apply h-[min(88vh,680px)] border-0
+}
+ 
+.product-catalog-card-modal .modal-body {
+	@apply p-0
+}
+
+.product-catalog-card-modal .modal-body .product-collection-name {
+	@apply font-(family-name:--font-inter) text-[11px] uppercase tracking-[0.15em] text-(--text-light) leading-[1.7]
+}
+
+.product-catalog-card-modal .modal-body .product-name {
+	@apply text-[clamp(22px,3vw,32px)] leading-[1.15] font-(family-name:--font-cormorant-garamond)
+}
+
+.product-catalog-card-modal .modal-body .product-price {
+	@apply font-(family-name:--font-cormorant-garamond) text-[22px] text-(--color-accent) tracking-[0.02em]
+}
+
+.product-catalog-card-modal .modal-body .product-main-info {
+	@apply border-b border-b-(--color-border) pb-4
+}
+
+
+.product-catalog-card-modal .modal-body .product-main-info,
+.product-catalog-card-modal .modal-body .product-additional-info {
+	@apply flex flex-col gap-4 w-full
+}
+
+.product-catalog-card-modal .modal-body .product-additional-info .product-additional-info-section {
+	@apply flex flex-col gap-2 font-(family-name:--font-inter)
+}
+
+.product-catalog-card-modal .modal-body .product-additional-info .product-additional-info-section h4 {
+	@apply font-medium uppercase tracking-[0.15em] text-(--text-light) text-[11px]
+}
+
+.product-catalog-card-modal .modal-body .product-additional-info .product-additional-info-section p {
+	@apply text-[14px] text-(--text-muted)
+}
+
+.product-catalog-card-modal .modal-body .product-additional-info .product-additional-info-section ul {
+	@apply list-none flex flex-col gap-1.5
+}
+
+.product-catalog-card-modal .modal-body .product-additional-info .product-additional-info-section li {
+	@apply text-[13px] text-(--text-muted) leading-normal pl-3.5 relative
+}
+
+.product-catalog-card-modal .modal-body .product-additional-info .product-additional-info-section li::before {
+	@apply content-["—"] absolute left-0 text-(--color-accent) text-[11px] top-px
+}
+
+.product-catalog-card-modal .modal-body button {
+	@apply border border-(--color-text) hover:bg-(--color-accent) hover:border-(--color-accent) hover:text-white transition-all duration-220
+}
+
+@media (max-width: 1024px) {
+	.product-cards {
+        @apply grid-cols-2
+    }
+}
+
+@media (max-width: 768px) {
+	.product-cards {
+        @apply grid-cols-1 gap-6
+    }
+}

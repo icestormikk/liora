@@ -1,26 +1,55 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+	--background: #FEFDF9;
+	--background-warm: #F5F0EE;
+	--background-blush: #EDE4E8;
+  
+	--text-muted: #6D625A;
+	--text-default: #1E1A16;
+	--text-light: #9E9189;
+
+	--font-great-vibes: var(--great-vibes), cursive;
+  	--font-inter: var(--inter), system-ui, sans-serif;
+ 	--font-cormorant-garamond: var(--cormorant-garamond), Georgia, serif;
+ 
+  	--color-border: #DDD4CC;
+	--color-accent: #B08765;
+	--color-soft: #E8E2DC;
+
+	--transition-base: 220ms ease;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--font-sans: var(--font-geist-sans);
+	--font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+	--background: #0a0a0a;
+	--foreground: #ededed;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+	@apply bg-background text-(--text-default)
+}
+
+button {
+	@apply whitespace-nowrap px-8 py-3 tracking-[0.15em] font-(family-name:--font-inter) font-normal uppercase text-[12px] cursor-pointer
+}
+
+h2 {
+	@apply font-(family-name:--font-cormorant-garamond) text-[clamp(32px,4vw,52px)] leading-[1.1] tracking-[-0.01em] font-normal
+}
+
+p {
+	@apply text-(--text-muted) leading-[1.7]
+}
+
+.link-arrow {
+	@apply uppercase font-(family-name:--font-inter) hover:underline text-(--text-muted) tracking-[0.12em] inline-flex gap-2 text-[12px] font-normal
 }

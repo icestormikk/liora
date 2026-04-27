@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.section {
+	@apply py-[clamp(80px,10vw,140px)]
+}
+
+.section > div {
+	@apply max-w-300 mx-auto px-[clamp(20px,4vw,60px)]
+}
+
+.section .header {
+	@apply flex justify-between items-end mb-12
+}
+
+.section .header span {
+	@apply text-(--text-muted) font-(family-name:--font-cormorant-garamond) text-[18px] leading-[1.4] italic
+}

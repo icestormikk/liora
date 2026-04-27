@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+.about .body {
+	@apply grid grid-cols-2 gap-[clamp(40px,6vw,80px)]
+}
+
+.about .body .about-text p {
+	@apply mb-5 max-w-120 font-(family-name:--font-inter)
+}
+
+.about .body .about-text a {
+	@apply mt-8
+}
+
+.about .body .about-images {
+	@apply relative h-125
+}
+
+.about .body .about-images img {
+	@apply shadow-[0_20px_60px_rgba(0,0,0,0.1)]
+}
+
+.about .body .about-images .image-wrapper {
+	@apply absolute aspect-6/8 
+}
+
+@media (max-width: 768px) {
+	.about .body {
+		@apply grid-cols-1
+	}
+
+	.about .body .about-text p {
+		@apply w-full max-w-none
+	}
+
+	.about .body .about-images {
+		@apply h-165
+	}
+}

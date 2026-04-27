@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+:root {
+	--swiper-pagination-color: var(--color-accent);
+	--swiper-pagination-top: 140px;
+}
+
+.reviews-swiper {
+	@apply h-50
+}
+
+.reviews-swiper .reviews-swiper-slide {
+	@apply px-[clamp(20px,8vw,120px)]
+}

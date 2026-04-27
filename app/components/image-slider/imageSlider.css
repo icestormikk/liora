@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.image-slider {
+	@apply w-full h-full overflow-hidden
+}
+
+.image-slider > img {
+	@apply w-full h-full object-cover transition duration-500 ease-in-out
+}

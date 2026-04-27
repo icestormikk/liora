@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+.shipping .body {
+	@apply grid grid-cols-3 gap-10
+}
+
+.shipping .footer {
+	@apply mt-12 border-t border-t-(--color-border) pt-8
+}
+
+.shipping .footer p {
+	@apply text-[13px] text-(--text-light) m-[0_auto] text-center
+}
+
+@media (max-width: 768px) {
+    .shipping .body {
+		@apply grid-cols-1
+    }
+}

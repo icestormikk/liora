@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.review-card {
+	@apply text-center
+}
+
+.review-card blockquote {
+	@apply font-(family-name:--font-cormorant-garamond) italic text-[clamp(20px,2.5vw,28px)] leading-normal mb-8
+}

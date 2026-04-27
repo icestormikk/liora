@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.contact-card {
+	@apply py-5 px-7 flex justify-start items-center gap-4 border border-(--color-border) w-full transition duration-[220ms] ease-in-out
+}
+
+.contact-card:hover {
+	@apply border-(--color-accent) text-(--color-accent)! shadow-[0_4px_16px_rgba(176,135,101,0.12)]
+}
+
+.contact-card > .contact-card-info > p {
+	@apply font-(family-name:--font-cormorant-garamond) font-normal text-(--text-default)! text-[18px] leading-[1.2]
+}
+
+.contact-card:hover > .contact-card-info > p {
+	@apply text-(--color-accent)!
+}
+
+.contact-card > .contact-card-info > span {
+	@apply font-(family-name:--font-inter) text-[11px] uppercase text-(--text-light) mt-0.5 tracking-[0.12em]
+}

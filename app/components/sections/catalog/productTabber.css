@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.product-tabber .product-tabber-navigation {
+	@apply flex flex-row gap-2 border-b border-b-(--color-border) mb-12
+}
+
+.product-tabber .product-tabber-navigation .tab.active {
+	@apply border-b border-b-(--color-accent) text-(--text-default)
+}
+
+.product-tabber .product-tabber-navigation .tab {
+	@apply text-[11px] tracking-[0.15em] font-(--font-inter) text-(--text-muted)
+}

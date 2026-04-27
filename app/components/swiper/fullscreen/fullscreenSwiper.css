@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+.fullscreen-swiper {
+	@apply fixed w-screen h-screen bg-[rgba(20,17,14,0.95)] z-100000 overflow-hidden text-white flex flex-col
+}
+
+.fullscreen-swiper > .header {
+	@apply flex justify-end items-center shrink-0
+}
+
+.fullscreen-swiper > .swiper {
+	@apply flex-1 min-h-0
+}
+
+.fullscreen-swiper > .swiper .swiper-slide {
+	@apply flex justify-center items-center
+}
+
+/* .fullscreen-swiper > .header > .close-button {
+	@apply text-white/70 w-9.5 h-9.5 flex justify-center items-center;
+	padding: 0 !important;
+}
+
+.fullscreen-swiper > .swiper > .swiper-wrapper {
+	@apply h-full relative w-full
+}
+
+.fullscreen-swiper .swiper-button-prev,
+.fullscreen-swiper .swiper-button-next {
+	@apply text-white w-12 h-12
+}
+
+.fullscreen-swiper .swiper-slide {
+	@apply h-full flex justify-center items-center
+}
+
+.fullscreen-swiper  .swiper-pagination-bullet {
+	@apply bg-white opacity-50
+}
+
+.fullscreen-swiper .swiper-pagination-bullet-active {
+	@apply opacity-100
+} */

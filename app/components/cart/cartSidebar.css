@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+.cart-overlay {
+	@apply fixed inset-0 bg-black/30 z-99 transition-opacity duration-300 backdrop-blur-sm;
+}
+
+#cart-sidebar {
+	@apply fixed top-0 right-0 h-screen w-full max-w-100 bg-(--background) shadow-lg z-100 transition-transform duration-300 flex flex-col border-l border-(--color-border) translate-x-full;
+}
+
+#cart-sidebar.open {
+	@apply translate-x-0
+}
+
+.cart-header {
+	@apply flex justify-between items-center p-6 border-b border-b-(--color-border) gap-3.75
+}
+
+.cart-header > .close-btn {
+	@apply p-0
+}
+
+.cart-header h3 {
+	@apply text-(--text-default) font-(family-name:--font-cormorant-garamond) text-[24px] font-normal;
+}
+
+.close-btn {
+	@apply bg-transparent border-0 cursor-pointer text-(--text-muted) transition-colors hover:text-(--text-default) flex items-center justify-center
+}
+
+.cart-content {
+	@apply flex-1 overflow-y-auto p-6
+}
+
+.cart-empty {
+	@apply h-full flex items-center justify-center
+}
+
+.cart-empty p {
+	@apply text-(--text-muted) text-center text-[14px]
+}
+
+.cart-items {
+	@apply flex flex-col gap-6
+}
+
+.quantity-btn {
+	@apply w-7 h-7 text-[12px] font-semibold border border-(--color-border) bg-transparent cursor-pointer text-(--text-muted) transition-colors hover:bg-(--color-border) hover:text-(--text-default) flex items-center justify-center rounded
+}
+
+.quantity {
+	@apply w-8 text-center text-(--text-default) text-[13px] font-medium
+}
+
+.cart-footer {
+	@apply border-t border-t-(--color-border) p-6 flex flex-col gap-4
+}
+
+.cart-footer .checkout-contacts {
+	@apply flex flex-col gap-2 font-(family-name:--font-cormorant-garamond) 
+}
+
+.cart-footer .checkout-contacts a {
+	@apply px-4 py-3 flex justify-start items-center gap-4 border border-(--color-border) text-[14px] leading-[1.2] hover:border-(--color-accent) hover:text-(--color-accent) transition-colors duration-220
+}
+
+.cart-total {
+	@apply flex justify-between items-center font-(family-name:--font-inter)
+}
+
+.cart-total span {
+	@apply text-(--text-default) text-[12px] tracking-[0.15em]
+}
+
+.checkout-btn {
+	@apply font-(family-name:--font-inter) border border-(--text-default) text-(--text-default) text-[12px] px-8 py-3 rounded-xs uppercase tracking-[0.15em] transition-colors duration-220 hover:bg-(--color-accent) hover:text-white hover:border-(--color-accent)
+}
+
+@media (max-width: 767px) {
+	#cart-sidebar {
+		@apply max-w-full
+	}
+}

@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.logo {
+	@apply flex flex-col gap-[-2px]
+}
+
+.logo > .header {
+	@apply font-(family-name:--font-great-vibes) text-[32px] leading-none
+}
+
+.logo > .subheader {
+	@apply font-(--font-inter) text-[10px] uppercase tracking-[.22em] text-(--text-muted)
+}

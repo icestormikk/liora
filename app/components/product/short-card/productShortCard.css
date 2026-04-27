@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.product-short-card {
+	@apply flex justify-center items-center flex-col gap-2 hover:cursor-pointer
+}
+
+.product-short-card .product-short-card-image {
+	@apply object-cover aspect-square w-full transition-all duration-220
+}
+
+.product-short-card .product-short-card-label {
+	@apply font-(family-name:--font-inter) text-[12px] text-(--text-muted) tracking-[0.04em] text-center
+}
