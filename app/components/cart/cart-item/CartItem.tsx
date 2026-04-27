@@ -7,7 +7,7 @@ export interface CartItemProps {
 }
 
 export default function CartItem({ cartItem } : CartItemProps) {
-	const { product, quantity } = cartItem;
+	const { product } = cartItem;
 	const { removeFromCart } = useCart();
 
 	return (
